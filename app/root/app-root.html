@@ -1,7 +1,22 @@
 <div class="container">
     <div class="row">
+        <div class="col-md-3">
+            <h1>Pick a View</h1>
+
+        </div>
+        <div class="col-md-2">
+            <a [routerLink]="['/Home']">Back home</a>
+        </div>
+        <div class="col-md-3">
+           <a [routerLink]="['/Map']">A map of Route 66</a>
+        </div>
+        <div class="col-md-3">
+            <a [routerLink]="['/LocationDetail']">See the western endpoint, Santa Monica</a>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-12">
-            <h1>The World Is Hollow</h1>
+            <router-outlet></router-outlet>
         </div>
     </div>
 </div>
